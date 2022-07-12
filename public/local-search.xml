@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>通过gitPage部署hexo</title>
+    <link href="/2022/07/12/%E9%80%9A%E8%BF%87gitPage%E9%83%A8%E7%BD%B2hexo/"/>
+    <url>/2022/07/12/%E9%80%9A%E8%BF%87gitPage%E9%83%A8%E7%BD%B2hexo/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>本地hexo</title>
+    <link href="/2022/07/10/%E6%9C%AC%E5%9C%B0hexo/"/>
+    <url>/2022/07/10/%E6%9C%AC%E5%9C%B0hexo/</url>
+    
+    <content type="html"><![CDATA[<p>成功将hexo网页的生成配置在了本地<br>现在服务器上只会放public的目录下生成好的静态网页</p><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>目前git使用的是自己搭建服务器git的方式<br>但是在git仓库无法直接看到代码 所以需要在服务器上再git一下拉取到目录中，才可以在nginx中配置</p><p>希望可以达到本地git之后 网页即可变化的效果。</p><p>下一步尝试使用github等现成的方案来部署配置</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>socket练习</title>
+    <link href="/2022/07/09/socket%E7%BB%83%E4%B9%A0/"/>
+    <url>/2022/07/09/socket%E7%BB%83%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Linux系统中权限相关学习笔记</title>
+    <link href="/2022/07/09/Linux%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9D%83%E9%99%90%E5%92%8C%E6%89%80%E6%9C%89%E8%80%85/"/>
+    <url>/2022/07/09/Linux%E7%B3%BB%E7%BB%9F%E4%B8%AD%E6%9D%83%E9%99%90%E5%92%8C%E6%89%80%E6%9C%89%E8%80%85/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Linux系统中用来更改权限的一些命令"><a href="#Linux系统中用来更改权限的一些命令" class="headerlink" title="Linux系统中用来更改权限的一些命令"></a>Linux系统中用来更改权限的一些命令</h1><h3 id="更改文件-x2F-文件夹的所有者"><a href="#更改文件-x2F-文件夹的所有者" class="headerlink" title="更改文件&#x2F;文件夹的所有者"></a>更改文件&#x2F;文件夹的所有者</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs SHELL">chown -R ratio hexo <br></code></pre></td></tr></table></figure><h3 id="更改文件-x2F-文件夹的权限"><a href="#更改文件-x2F-文件夹的权限" class="headerlink" title="更改文件&#x2F;文件夹的权限"></a>更改文件&#x2F;文件夹的权限</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs SHELL">chmod -R 744 hexo<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>Coding</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2022/07/09/hello-world/"/>
+    <url>/2022/07/09/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+  
+  
+  <entry>
+    <title>about</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Contact-with-me-by-mail"><a href="#Contact-with-me-by-mail" class="headerlink" title="Contact with me by mail"></a>Contact with me by mail</h1><p>address:<a href="mailto:&#114;&#x61;&#116;&#x69;&#x6f;&#x5f;&#x64;&#x64;&#64;&#49;&#x36;&#x33;&#46;&#99;&#111;&#109;">&#114;&#x61;&#116;&#x69;&#x6f;&#x5f;&#x64;&#x64;&#64;&#49;&#x36;&#x33;&#46;&#99;&#111;&#109;</a></p><p>Hope you enjoy Coding!</p>]]></content>
+    
+  </entry>
+  
+  
+  
+</search>
