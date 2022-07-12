@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>通过gitPage部署hexo</title>
+    <title>通过GitPage部署hexo</title>
     <link href="/2022/07/12/%E9%80%9A%E8%BF%87gitPage%E9%83%A8%E7%BD%B2hexo/"/>
     <url>/2022/07/12/%E9%80%9A%E8%BF%87gitPage%E9%83%A8%E7%BD%B2hexo/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>通过gitpage将hexo生成的静态网站部署。</p><h2 id="GitPage"><a href="#GitPage" class="headerlink" title="GitPage"></a>GitPage</h2><p>GitHub Pages官网：<a href="https://pages.github.com/">https://pages.github.com/</a></p><p>gitpage整体的使用体验还是很简单的，通过github仓库去实现网站的部署。</p><p>与hexo的deploy功能可以很好的结合，hexo本身就对git有着很好的支持，通过</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm i hexo-deployer-git<br></code></pre></td></tr></table></figure><p>安装相关插件后，在其默认的config中进行配置，如下图</p><p><img src="https://s1.vika.cn/space/2022/07/12/7e50712eb3c749e7a7670fde011927b0" alt="image-20220712221356591"></p><p>然后运行<code>hexo deploy</code>即可自动配置。</p><p>注意此插件在hexo根目录生成了一个<code>.deploy_git</code>目录，进入后是一个与<code>public</code>目录同步的git仓库，如果需要增加图片等，在外部的<code>public</code>目录添加即可，此目录中内容尽量不要修改。</p><blockquote><p>注意config中branch的设置，默认设置为master，如果本地分支映射错误会很麻烦，不是很好解决此问题。</p></blockquote><p>gitpage中注意在仓库相关选项可以选择依照某一分支进行page生成，所以可以将gitpage和hexo源代码共同存储在同一仓库的<strong>不同分支</strong>上，不会造成影响，且可以达到多平台同步的效果。</p>]]></content>
     
     
     <categories>
